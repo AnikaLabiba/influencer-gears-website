@@ -1,0 +1,30 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Libre+Baskerville&family=Luxurious+Roman&family=Merriweather:wght@700&family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+
+
+/* Common parts styles */
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* navbar styles */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+.title{
+    margin-left: 10%;
+    font-size: 18px;
+}
+.nav-items{
+    margin-right: 6%;
+}
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 15px;
+}
