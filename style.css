@@ -205,11 +205,10 @@ margin-bottom: 8%;
     .nav-items{
         justify-content: center;
         padding-left: 2%;
-      
     }
     .flex-box{
         flex-direction: column;
-        /* margin-left: 7%; */
+       
     }
     .intro-part{
         width: 100%;
@@ -226,11 +225,34 @@ margin-bottom: 8%;
         grid-template-columns: repeat(1, 1fr);
        padding-left: 10%;
     }
-    .top-reviews{
+    .products{
         margin-left: 10%;
-        margin-right: 15%;
+        margin-right: 5%;
       }
     footer{
+        width: 110%;
+        position: relative;
+    } 
+}
+/* Media queries for Tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    nav{
+        flex-direction: column;
+        padding-top: 25px;
+    }
+    .nav-items{
+        justify-content: center;
+        margin-left: 5%;
+    }
+    .products, .section-title, .top-reviews{
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .products{
+         padding-left: 5%;
+         padding-right: 5%;
+     }
+     footer{
         width: 110%;
         position: relative;
     } 
