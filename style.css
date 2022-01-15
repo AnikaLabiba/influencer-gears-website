@@ -27,4 +27,40 @@ nav{
     margin-left: 20px;
     font-weight: 700;
     font-size: 15px;
+    color: black;
+}
+.nav-items .nav-icon{
+    color: rgba(255, 115, 115, 0.842);
+    font-size: 18px;
+}
+
+/* Main part styles */
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    
+}
+.intro-part{
+    width: 40%;
+    
+   
+}
+.intro-part h1{
+    font-size: 45px;
+}
+
+.intro-part a{
+    text-decoration: none;
+    background-color: rgba(255, 115, 115, 0.842);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+.flex-box img{
+    width:200%;
+    margin-top: 25%;
+    margin-right: 10%;
 }
