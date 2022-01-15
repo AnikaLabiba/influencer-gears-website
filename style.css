@@ -121,3 +121,14 @@ margin-bottom: 8%;
     padding-right: 10%;
     align-items: center;
 }
+/* Top reviews styles */
+.top-review{
+    width: 310px;
+    height: 190px;
+    border: 1px solid black;
+    position: relative;
+}
+.top-review:hover .photo {
+    transform: scale(1.2);
+    transition: transform 3s ease-in;
+} 
