@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
+    margin:0;
+    padding:0;
 }
 
 /* navbar styles */
@@ -32,6 +34,21 @@ nav{
 .nav-items .nav-icon{
     color: rgba(255, 115, 115, 0.842);
     font-size: 18px;
+}
+/* animation for search icon */
+.fa-search{
+
+    position: relative;
+    animation: scaling 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running; 
+}
+@keyframes scaling {
+    from{
+       transform:scale(0.0);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }
 
 /* Main part styles */
@@ -67,6 +84,7 @@ margin-bottom: 8%;
     margin-right: 10%;
 }
 /* Products styles */
+
 .section-title{
     text-align: center;
     font-size: 27px;
@@ -77,9 +95,9 @@ margin-bottom: 8%;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap:25px;
     padding-top: 5%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     justify-content: center;
-    margin-left: 80px;
+    margin-left: 10%;
     margin-right: 50px;
     padding-left: 15px;
     padding-right: 10px;
@@ -92,6 +110,9 @@ margin-bottom: 8%;
 }
 .product-pic img{
     padding: 5px;
+}
+.product-details{
+    padding-left: 8px;
 }
 .fa-star{
     font-size: 10px;
@@ -119,16 +140,56 @@ margin-bottom: 8%;
     display: flex;
     justify-content: flex-end;
     padding-right: 10%;
+    margin-bottom: 5%;
     align-items: center;
 }
+
 /* Top reviews styles */
-.top-review{
-    width: 310px;
-    height: 190px;
-    border: 1px solid black;
-    position: relative;
+
+.top-reviews{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5% 0;
+    margin-left: 15%;
+    margin-right: 10%;
+    justify-content:center;
 }
-.top-review:hover .photo {
-    transform: scale(1.2);
-    transition: transform 3s ease-in;
-} 
+.top-review{
+    width: 370px;
+    height: 390px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgb(241, 240, 240);
+}
+
+.photo{
+    padding-top: 15px;
+    padding-bottom: 5px;
+   padding-left: 30px;
+ }
+ /* Animation for photos */
+.photo img{
+    animation: zoom 4s ease-in-out 0s infinite alternate;
+}
+   @keyframes zoom {
+       0%{
+           transform: scale(1);
+       }
+       100%{
+           transform: scale(1.2);
+       }
+   }
+
+   /* Footer styles */
+   footer{
+    background-color: #000027;
+    color: white;
+    text-align: center;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+.footer-icon .fab{
+    margin-left: 20px;
+}
