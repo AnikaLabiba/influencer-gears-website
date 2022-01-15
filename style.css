@@ -223,14 +223,11 @@ margin-bottom: 8%;
     }
     .products, .section-title, .top-reviews{
         grid-template-columns: repeat(1, 1fr);
-       padding-left: 10%;
+       
     }
-    .products{
-        margin-left: 10%;
-        margin-right: 5%;
-      }
+  
     footer{
-        width: 110%;
+        width: 100%;
         position: relative;
     } 
 }
