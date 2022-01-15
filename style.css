@@ -50,6 +50,9 @@ nav{
 .intro-part h1{
     font-size: 45px;
 }
+.intro-part p{
+margin-bottom: 8%;
+}
 
 .intro-part a{
     text-decoration: none;
@@ -57,10 +60,64 @@ nav{
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
-    
 }
 .flex-box img{
     width:200%;
     margin-top: 25%;
     margin-right: 10%;
+}
+/* Products styles */
+.section-title{
+    text-align: center;
+    font-size: 27px;
+    color: rgb(43, 39, 39);
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:25px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.product{
+    box-shadow: 0px 0px 10px 10px rgb(241, 240, 240);
+    width: 315px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.product-pic img{
+    padding: 5px;
+}
+.fa-star{
+    font-size: 10px;
+}
+.filled{
+    color: rgb(223, 191, 10);
+}
+.empty{
+    color: rgb(107, 97, 97);
+}
+.rating{
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(70, 63, 63);
+}
+.info{
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(107, 97, 97);
+}
+#see-button a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(243, 69, 69, 0.842);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    align-items: center;
 }
